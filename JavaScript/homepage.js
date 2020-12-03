@@ -62,7 +62,7 @@ function signInFormCreate(){
     var newButton = document.createElement("a");
     newButton.classList.add("newButton");
     newButton.innerHTML ="SIGN-IN";
-    newButton.setAttribute("href","HTML/AfterSignIn.html")
+    newButton.setAttribute("href","../HTML/AfterSignIn.html")
     newSignin.appendChild(newButton);
 
     banner.appendChild(newSignin);
