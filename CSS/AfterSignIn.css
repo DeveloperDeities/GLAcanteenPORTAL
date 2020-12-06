@@ -80,6 +80,7 @@
 .box h3{
     text-align: center;
     margin: 15px 0;
+    color: rgb(139, 48, 212);
 }
 .box:hover{
     border: 2px solid burlywood;
