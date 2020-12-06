@@ -319,6 +319,7 @@ footer hr{
     border-radius: 20px;
     opacity: 1;
     padding: 30px;
+    border: 2px solid green;
 }
 .newUser,.newPassword{
     font-size: 30px;
