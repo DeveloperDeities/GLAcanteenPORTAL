@@ -125,7 +125,7 @@
     width: 100%;
     font-size: 15px;
     margin: 5px 0 5px 0;
-    border: 2px solid lightcoral;
+    border: 2px solid green;
     border-radius: 5px;
 }
 .box p{
@@ -314,8 +314,8 @@ footer hr{
     width: 350px;
     height: 400px;
     margin-top: 50px;
-    margin-left: 65%;
-    background-color:white;
+    margin-left: 5%;
+    background-color:rgb(183, 206, 183);
     border-radius: 20px;
     opacity: 1;
     padding: 30px;
@@ -328,7 +328,7 @@ footer hr{
     width: 100%;
     font-size: 15px;
     margin: 10px 0 10px 0;
-    border: 2px solid lightcoral;
+    border: 2px solid green;
     border-radius: 5px;
 }
 .chkbox{
@@ -354,7 +354,7 @@ footer hr{
     padding: 10px 0;
 }
 .newSignin a:hover{
-    background-color: rgb(69, 69, 175);
+    background-color: rgb(55, 129, 55);;
 }
 
 .services{
