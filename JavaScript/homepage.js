@@ -26,10 +26,21 @@ function alertMsg(){
         alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
     }
 }
+function checkCredentials(){
+    if(document.getElementById("password1").value.length==0){
+        alert("enter a valid password and confirm it!");
+    }
+    else if(document.getElementById("username1").value.length==0){
+        alert("enter a valid username!");
+    }
+    else{
+        window.location.replace("HTML/AfterSignIn.html");
+    }
+};
 
 
 function signInFormCreate(){
-    signin.style.backgroundColor ="black";
+     signin.style.backgroundColor ="black";
     signup.style.backgroundColor = "orange";
     // console.log(box);
 
@@ -47,6 +58,7 @@ function signInFormCreate(){
     var newUserBox = document.createElement("input");
     newUserBox.classList.add("newUserBox");
     newUserBox.setAttribute("type","username");
+    newUserBox.setAttribute("id", "username1");
     newUserBox.setAttribute("placeholder","Enter UserName");
     newUserBox.required=true;
     newSignin.appendChild(newUserBox);
@@ -59,6 +71,7 @@ function signInFormCreate(){
     var newPasswordBox = document.createElement("input");
     newPasswordBox.classList.add("newPasswordBox");
     newPasswordBox.setAttribute("type","password");
+    newPasswordBox.setAttribute("id", "password1");
     newPasswordBox.setAttribute("placeholder","Enter Password");
     newPasswordBox.required=true;
     newSignin.appendChild(newPasswordBox);
@@ -75,12 +88,19 @@ function signInFormCreate(){
     newSignin.appendChild(para);
 
     var newButton = document.createElement("a");
+    newButton.setAttribute("id", "btn");
     newButton.classList.add("newButton");
+    newButton.setAttribute("onclick", " checkCredentials()");
     newButton.innerHTML ="SIGN-IN";
-    newButton.setAttribute("href","HTML/AfterSignIn.html")
+   
+    
+    //newButton.setAttribute("href","HTML/AfterSignIn.html")
     newSignin.appendChild(newButton);
 
     banner.appendChild(newSignin);
+    
+
+
     
 
 }
