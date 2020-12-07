@@ -101,14 +101,13 @@ function signInFormCreate(){
 
 }
 function signUpFormCreate(){
-    //signup.style.backgroundColor ="black";
-    //signin.style.backgroundColor = "orange";
+    signup.style.backgroundColor ="black";
+    signin.style.backgroundColor = "orange";
 
-  //  location.reload();
-    element = document.querySelector('.box'); 
-            element.style.visibility = 'visible'; 
 
-    //signInForm.parentNode.removeChild(signInForm);
+    location.reload();
+
+    signInForm.parentNode.removeChild(signInForm);
     
 
 
