@@ -10,8 +10,7 @@ signin.onclick = signInFormCreate;
 signup.onclick =signUpFormCreate;
 signUp.onclick= alertMsg;
 function alertMsg(){
-    //alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
-     var inputVal = document.getElementById("userbox").value.length;
+    var inputVal = document.getElementById("userbox").value.length;
     if(inputVal==0){
         alert("enter a valid username!");
     }
@@ -26,6 +25,7 @@ function alertMsg(){
         alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
     }
 }
+
 function checkCredentials(){
     if(document.getElementById("password1").value.length==0){
         alert("enter a valid password and confirm it!");
@@ -38,9 +38,8 @@ function checkCredentials(){
     }
 };
 
-
 function signInFormCreate(){
-     signin.style.backgroundColor ="black";
+    signin.style.backgroundColor ="black";
     signup.style.backgroundColor = "orange";
     // console.log(box);
 
@@ -100,20 +99,19 @@ function signInFormCreate(){
     banner.appendChild(newSignin);
     
 
-
-    
-
 }
 function signUpFormCreate(){
-    signup.style.backgroundColor ="black";
-    signin.style.backgroundColor = "orange";
+    //signup.style.backgroundColor ="black";
+    //signin.style.backgroundColor = "orange";
 
-    location.reload();
+  //  location.reload();
+    element = document.querySelector('.box'); 
+            element.style.visibility = 'visible'; 
 
-    // signInForm.parentNode.removeChild(signInForm);
+    //signInForm.parentNode.removeChild(signInForm);
     
 
-    
+
 
     // var box = document.createElement("div");
     // box.classList.add("box");
