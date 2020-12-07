@@ -10,8 +10,23 @@ signin.onclick = signInFormCreate;
 signup.onclick =signUpFormCreate;
 signUp.onclick= alertMsg;
 function alertMsg(){
-    alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
+    //alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
+     var inputVal = document.getElementById("userbox").value.length;
+    if(inputVal==0){
+        alert("enter a valid username!");
+    }
+    else if(document.getElementById("passwordbox").value.length==0|| document.getElementById("confirm-passwordbox").value.length==0||
+    document.getElementById("passwordbox").value!==document.getElementById("confirm-passwordbox").value){
+        alert("enter a valid password and confirm it!");
+    }
+    else if(document.getElementById("emailbox").value.length==0){
+        alert("enter a valid E-mail!");
+    }
+    else{
+        alert("You have Signed up Successfully... \nClick on the Sign in button to Contiinue... ");
+    }
 }
+
 
 function signInFormCreate(){
     signin.style.backgroundColor ="black";
