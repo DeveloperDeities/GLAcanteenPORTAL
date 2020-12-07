@@ -108,7 +108,7 @@ function signUpFormCreate(){
     location.reload();
 
     signInForm.parentNode.removeChild(signInForm);
-    
+
 
 
 
